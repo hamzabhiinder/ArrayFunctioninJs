@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>Java Script Array Simulator</h1>
+        <Label>Item: <input type="text" id="text"></Label><br>
+        <Label>Index:<input type="text" id="index"></Label><br>
+        <br>
+        <h3>Select any operation to be performed</h3>
+        <div class="main">
+            <div  class="col">
+                
+                <input type="radio" name="List" id="push" onclick="R1()">
+                <button onclick="Push()" id="pushbtn"  class="btnOff">Push</button><br>
+                <input type="radio" name="List" id="shift" onclick="R2()">
+                <button onclick="Shift()"  id="shiftbtn" class="btnOff">Shift</button><br>
+                <input type="radio" name="List" id="Delete" onclick="R3()">
+                <button id="deletebtn" class="btnOff" onclick="deletebtn()">Delete</button><br>
+                <input type="radio" name="List" id="indexof" onclick="R4()">
+                <button  onclick="IndexOf()" id="indexofbtn" class="btnOff">Index of</button><br>
+                <input type="radio" name="List" id="Reverse" onclick="R5()">
+                <button id="Reversebtn" class="btnOff" onclick="reverse()">Reverse</button><br>
+            </div>
+            <div class="col2">
+                <input type="radio" name="List" id="Pop" onclick="R6()">
+                <button onclick="Pop()" id="Popbtn" class="btnOff">Pop</button><br>
+                <input type="radio" name="List" id="unShift" onclick="R7()">
+                <button onclick="unShift()" id="unShiftbtn" class="btnOff">UnShift</button><br>
+                <input type="radio" name="List" id="sort" onclick="R8()">
+                <button onclick="sort()"  id="sortbtn" class="btnOff">Sort</button><br>
+                <input type="radio" name="List" id="ValueAt" onclick="R9()">
+                <button id="ValueAtbtn" class="btnOff" onclick="ValueAt(); return false">Value at</button><br>
+                <input type="radio" name="List" id="update" onclick="R10()">
+                <button onclick="update()" id="updatebtn" class="btnOff">Update</button><br>
+            </div>
+        </div>
+        <br><br>
+        <div id="result"></div>
+        
+    </div>
+
+
+<script src="./index.js"></script>
+
+</body>
+
+</html>
